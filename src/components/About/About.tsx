@@ -1,5 +1,5 @@
 import { Container } from "./styles";
-import Aneesh from "../../assets/aneesh.jpg";
+// import Aneesh from "../../assets/aneesh.jpg";
 import wordpress from "../../assets/wordpress.svg";
 import shopify from "../../assets/shopify.svg";
 import htmlIcon from "../../assets/html-icon.svg";
@@ -13,6 +13,7 @@ import boostrapIcon from "../../assets/bootstrap-icon.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import php from "../../assets/php-icon.png";
 import angular from "../../assets/angular-icon.png";
+import Aneesh from "../../assets/aneesh/5.png";
 
 export function About() {
   return (
@@ -23,7 +24,14 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            Hi there! I'm Aneesh Ajithkumar, A Frontend focused Web Developer building the Frontend and Backend of Websites and Web Applications that leads to the success of the overall product.
+            Hi, I'm Aneesh Ajithkumar — a Frontend-Focused Full Stack Web
+            Developer. I specialize in crafting responsive, high-performance
+            websites and web applications that deliver seamless user
+            experiences. With a strong focus on both frontend and backend
+            development, I build scalable solutions that contribute directly to
+            the success and functionality of the product. Passionate about clean
+            code, modern UI/UX, and continuous learning, I turn ideas into
+            efficient, user-centered digital products.
           </p>
         </ScrollAnimation>
         {/* <ScrollAnimation animateIn="fadeInLeft" delay={0.2 * 1000} style={{ marginTop: "2rem", marginBottom: "2rem" }}>
@@ -38,23 +46,23 @@ export function About() {
           <h3>Here are my main skills:</h3>
         </ScrollAnimation>
         <div className="hard-skills">
-					<div className="hability">
+          <div className="hability">
             <ScrollAnimation animateIn="fadeInUp" delay={0.13 * 1000}>
               <img src={reactIcon} alt="React" />
             </ScrollAnimation>
           </div>
-					<div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.10 * 1000}>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
               <img src={angular} alt="Angular" />
             </ScrollAnimation>
           </div>
-					<div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.10 * 1000}>
+          <div className="hability">
+            <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
               <img src={php} alt="PHP" />
             </ScrollAnimation>
           </div>
           <div className="hability">
-            <ScrollAnimation animateIn="fadeInUp" delay={0.10 * 1000}>
+            <ScrollAnimation animateIn="fadeInUp" delay={0.1 * 1000}>
               <img src={wordpress} alt="Wordpress" />
             </ScrollAnimation>
           </div>
@@ -91,10 +99,10 @@ export function About() {
         </div>
       </div>
       <div className="about-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={0.20 * 1000}>
+        <ScrollAnimation animateIn="fadeInRight" delay={0.2 * 1000}>
           <img src={Aneesh} alt="Aneesh Ajithkumar" />
         </ScrollAnimation>
       </div>
     </Container>
-  )
+  );
 }

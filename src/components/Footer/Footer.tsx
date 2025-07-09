@@ -1,23 +1,25 @@
-import { Container } from './styles'
-import reactIcon from '../../assets/react-icon.svg'
-import linkedin from '../../assets/linkedin.svg'
-import githubIcon from '../../assets/github.svg'
-import whatsapp from '../../assets/whatsapp.svg'
-import telegram from '../../assets/telegram.svg'
-import instagramIcon from '../../assets/instagram.svg'
+import { Container } from "./styles";
+import reactIcon from "../../assets/react-icon.svg";
+import linkedin from "../../assets/linkedin.svg";
+import githubIcon from "../../assets/github.svg";
+import whatsapp from "../../assets/whatsapp.svg";
+import telegram from "../../assets/telegram.svg";
+import instagramIcon from "../../assets/instagram.svg";
 // import discordIcon from '../../assets/discord.png'
 
 export function Footer() {
   return (
     <Container className="footer">
-      <a href="https://aneeshajithkumar.online" className="logo">
+      <a href="https://aneeshajithkumar.in" className="logo">
         <span>aneesh</span>
-        <span>ajithkumar.online</span>
+        <span>ajithkumar.in</span>
       </a>
       <div>
         <p>
           {/* This Website was made with <img src={reactIcon} alt="React" /> */}
-          {/* <span>❤️</span> */}
+          <span>
+            <h2>VU3CVW</h2>
+          </span>
         </p>
       </div>
       <div className="social-media">
@@ -28,11 +30,7 @@ export function Footer() {
         >
           <img src={linkedin} alt="Linkedin" />
         </a>
-        <a
-          href="https://github.com/aneeshaji"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href="https://github.com/aneeshaji" target="_blank" rel="noreferrer">
           <img src={githubIcon} alt="GitHub" />
         </a>
         <a
@@ -58,5 +56,5 @@ export function Footer() {
         </a>
       </div>
     </Container>
-  )
+  );
 }

@@ -1,16 +1,14 @@
 import { Container } from "./styles";
-import githubIcon from "../../assets/github.svg"
+import githubIcon from "../../assets/github.svg";
 // import DownloadApp from '../../assets/download.png'
-import externalLink from "../../assets/external-link.svg"
+import externalLink from "../../assets/external-link.svg";
 import ScrollAnimation from "react-animate-on-scroll";
-
 
 export function Project() {
   return (
     <Container id="project">
       <h2>What I do</h2>
       <div className="projects">
-
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
             {/* <header>
@@ -24,7 +22,12 @@ export function Project() {
             </header> */}
             <div className="body">
               <h3>Full Stack Development</h3>
-              <p> I like to code things from scratch, and enjoy bringing ideas to life in the browser. </p>
+              <p>
+                {" "}
+                I enjoy building complete web applications from scratch —
+                creating responsive user interfaces and developing robust
+                backend systems to bring ideas to life in the browser.{" "}
+              </p>
             </div>
             {/* <footer> <ul className="tech-list"> <li>AWS Lambda</li> <li>API Gateway</li> <li>DynamoDB</li> </ul> </footer> */}
           </div>
@@ -44,7 +47,9 @@ export function Project() {
             <div className="body">
               <h3>Cloud Infra-Architecture</h3>
               <p>
-				  Hosting and maintaining websites on virtual machine instances along with integration of databases .
+                I manage hosting and deployment of websites and applications on
+                cloud platforms, configure virtual machines, and integrate
+                scalable databases to ensure smooth performance.
               </p>
             </div>
             {/* <footer>
@@ -76,7 +81,9 @@ export function Project() {
             <div className="body">
               <h3>Software Development</h3>
               <p>
-				  Enjoy being part of a team to design, build, and deploy cross-platform softwares.
+                I collaborate with teams to design, build, and deploy
+                cross-platform software solutions, focusing on clean
+                architecture and reliable performance.
               </p>
             </div>
             {/* <footer>
@@ -295,7 +302,7 @@ export function Project() {
             </footer>
           </div>
         </ScrollAnimation> */}
-        
+
         {/* <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
@@ -320,7 +327,6 @@ export function Project() {
             </footer>
           </div>
         </ScrollAnimation> */}
-
       </div>
     </Container>
   );
