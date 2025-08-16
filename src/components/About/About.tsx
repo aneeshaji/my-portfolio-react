@@ -17,7 +17,7 @@ import Aneesh from "../../assets/aneesh/5.png";
 
 export function About() {
   return (
-    <Container id="about">
+    <Container id="aboutme">
       <div className="about-text">
         <ScrollAnimation animateIn="fadeInLeft">
           <h2>About me</h2>
