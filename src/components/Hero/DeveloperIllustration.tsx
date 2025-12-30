@@ -1,0 +1,79 @@
+import React from "react";
+
+export const DeveloperIllustration = () => (
+    <svg viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', height: 'auto', maxWidth: '600px' }}>
+        <defs>
+            <linearGradient id="laptopGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#2a2a2a" stopOpacity="1" />
+                <stop offset="100%" stopColor="#1a1a1a" stopOpacity="1" />
+            </linearGradient>
+            <linearGradient id="screenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="#0f0f1a" stopOpacity="1" />
+                <stop offset="100%" stopColor="#1a1a2e" stopOpacity="1" />
+            </linearGradient>
+            <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#00f3ff" stopOpacity="0.6" />
+                <stop offset="100%" stopColor="#7000ff" stopOpacity="0.6" />
+            </linearGradient>
+        </defs>
+
+        {/* Background Glow (Subtle) */}
+        <circle cx="400" cy="300" r="250" fill="url(#glowGradient)" opacity="0.1" />
+
+        {/* Laptop Base */}
+        <path d="M200 450 L600 450 L620 470 L180 470 Z" fill="#333" />
+        <rect x="180" y="470" width="440" height="15" rx="5" fill="#222" />
+
+        {/* Laptop Screen */}
+        <rect x="220" y="150" width="360" height="300" rx="10" fill="url(#laptopGradient)" />
+        <rect x="235" y="165" width="330" height="270" rx="2" fill="url(#screenGradient)" />
+
+        {/* Code Lines Abstract */}
+        <g id="code-lines">
+            <rect x="250" y="190" width="100" height="8" rx="2" fill="#ff79c6" />
+            <rect x="250" y="210" width="180" height="8" rx="2" fill="#8be9fd" />
+            <rect x="250" y="230" width="140" height="8" rx="2" fill="#50fa7b" />
+
+            <rect x="270" y="260" width="200" height="8" rx="2" fill="#f1fa8c" />
+            <rect x="270" y="280" width="160" height="8" rx="2" fill="#fff" opacity="0.5" />
+
+            <rect x="250" y="310" width="120" height="8" rx="2" fill="#bd93f9" />
+            <rect x="250" y="330" width="150" height="8" rx="2" fill="#ff5555" />
+            <rect x="250" y="350" width="150" height="8" rx="2" fill="#00f3ff" />
+        </g>
+
+        {/* Floating Tech Symbols */}
+        {/* React Atom */}
+        <g transform="translate(620, 150) rotate(15)">
+            <circle cx="0" cy="0" r="5" fill="#00f3ff" />
+            <ellipse cx="0" cy="0" rx="35" ry="12" stroke="#00f3ff" strokeWidth="2" fill="none" />
+            <ellipse cx="0" cy="0" rx="35" ry="12" stroke="#00f3ff" strokeWidth="2" fill="none" transform="rotate(60)" />
+            <ellipse cx="0" cy="0" rx="35" ry="12" stroke="#00f3ff" strokeWidth="2" fill="none" transform="rotate(120)" />
+        </g>
+
+        {/* JS Bracket */}
+        <g transform="translate(150, 250) rotate(-10)">
+            <rect x="-30" y="-30" width="60" height="60" rx="10" fill="#f7df1e" />
+            <text x="0" y="10" textAnchor="middle" fontFamily="Arial" fontWeight="bold" fontSize="24" fill="#000">JS</text>
+        </g>
+
+        {/* Code Tag */}
+        <g transform="translate(650, 400) rotate(10)">
+            <text x="0" y="0" textAnchor="middle" fontFamily="Consolas, monospace" fontWeight="bold" fontSize="60" fill="#7000ff">&lt;/&gt;</text>
+        </g>
+
+        {/* Coffee Cup */}
+        <g transform="translate(560, 450)">
+            <path d="M0 0 L40 0 L35 50 L5 50 Z" fill="#fff" />
+            <path d="M40 10 Q50 10 50 25 Q50 40 38 40" stroke="#fff" strokeWidth="4" fill="none" />
+            {/* Steam */}
+            <path d="M10 -10 Q20 -20 10 -30" stroke="#fff" strokeWidth="2" strokeOpacity="0.5" fill="none" />
+            <path d="M30 -15 Q40 -25 30 -35" stroke="#fff" strokeWidth="2" strokeOpacity="0.5" fill="none" />
+        </g>
+
+        {/* Abstract Shapes */}
+        <circle cx="100" cy="450" r="15" fill="#00f3ff" opacity="0.6" />
+        <rect x="700" y="250" width="20" height="20" fill="#ff5555" transform="rotate(45 710 260)" opacity="0.6" />
+        <circle cx="180" cy="120" r="8" fill="#50fa7b" opacity="0.6" />
+    </svg>
+);

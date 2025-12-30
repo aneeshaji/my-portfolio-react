@@ -8,7 +8,12 @@ import githubIcon from "../../assets/github.svg";
 import whatsapp from "../../assets/whatsapp.svg";
 import Hello from "../../assets/Hello.gif";
 import telegram from "../../assets/telegram.svg";
+import { calculateExperience } from "../../utils/calculateExperience";
+
 export function Hero() {
+  // Career started in January 2016 (based on Optiologic Technologies start date)
+  const experience = calculateExperience("2016-01-01");
+
   return (
     <Container id="home">
       <div className="hero-text">
@@ -24,7 +29,7 @@ export function Hero() {
           <h3>Software Developer</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">9+ Years Experience</p>
+          <p className="small-resume">{experience}</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>

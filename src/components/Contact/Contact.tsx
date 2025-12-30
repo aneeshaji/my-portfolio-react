@@ -7,9 +7,8 @@ export function Contact() {
   return (
     <Container id="contact">
       <header>
-        <h2>Contact</h2>
-        {/* <p>Ready to get started on your project? </p>
-        <p>Contact me now for a Free consultation.</p> */}
+        <h2>Get In Touch</h2>
+        <p>Have a project in mind? Let’s build something great together.</p>
       </header>
       <div className="contacts">
         <div>
@@ -22,8 +21,7 @@ export function Contact() {
           <a href="tel:+919746934344">
             <img src={phoneIcon} alt="Phone No" />
           </a>
-          <a href="tel:+919746934344">9746934344</a>
-          <a href="tel:+919995064344">9995064344</a>
+          <a href="tel:+919746934344">(+91) 9746934344</a>
         </div>
       </div>
       <Form></Form>

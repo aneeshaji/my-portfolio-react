@@ -1,5 +1,6 @@
 import { Container } from "./styles";
 import reactIcon from "../../assets/react-icon.svg";
+import hamRadioIcon from "../../assets/ham-radio.svg";
 import linkedin from "../../assets/linkedin.svg";
 import githubIcon from "../../assets/github.svg";
 import whatsapp from "../../assets/whatsapp.svg";
@@ -14,9 +15,10 @@ export function Footer() {
 				<span>aneesh</span>
 				<span>ajithkumar.in</span>
 			</a>
-			<div>
-				<a href="https://adoorarc.com/our-team" target="_blank" rel="noreferrer" className="logo">
-					<h5>VU3CVW</h5>
+			<div className="ham-radio">
+				<img src={hamRadioIcon} alt="Ham Radio" className="ham-icon" />
+				<a href="https://www.qrz.com/db/VU3CVW" target="_blank" rel="noreferrer">
+					VU3CVW
 				</a>
 			</div>
 			<div className="social-media">
