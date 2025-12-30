@@ -12,10 +12,10 @@ export function Experience() {
                 <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
                     <div className="experience-item">
                         <header>
-                            <h3>RM Education Solutions India Pvt. Ltd, Trivandrum</h3>
+                            <h3>RM India, Trivandrum</h3>
                             <span className="date">July 2021 - PRESENT</span>
                         </header>
-                        <p className="role">Project Lead</p>
+                        <p className="role">Senior Project Lead</p>
                         <p>
                             Worked in technologies React, Angular, JavaScript, jQuery, PHP and Yii.
                         </p>
