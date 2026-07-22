@@ -11,9 +11,9 @@ import instagramIcon from "../../assets/instagram.svg";
 export function Footer() {
 	return (
 		<Container className="footer">
-			<a href="https://aneeshajithkumar.in" className="logo">
+			<a href="https://aneeshajithkumar.online" className="logo">
 				<span>aneesh</span>
-				<span>ajithkumar.in</span>
+				<span>ajithkumar.online</span>
 			</a>
 			<div className="ham-radio">
 				<img src={hamRadioIcon} alt="Ham Radio" className="ham-icon" />

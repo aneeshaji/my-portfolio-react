@@ -4,7 +4,7 @@
 
 Welcome to my personal portfolio website. This project showcases my skills, professional experience, and technical expertise in building scalable web applications.
 
-🔗 **Live Demo:** [https://aneeshajithkumar.in](https://aneeshajithkumar.in)
+🔗 **Live Demo:** [https://aneeshajithkumar.online](https://aneeshajithkumar.online)
 
 ## 🚀 About Me
 

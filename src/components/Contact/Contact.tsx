@@ -12,10 +12,10 @@ export function Contact() {
       </header>
       <div className="contacts">
         <div>
-          <a href="mailto:me@aneeshajithkumar.in">
+          <a href="mailto:me@aneeshajithkumar.online">
             <img src={emailIcon} alt="Email" />
           </a>
-          <a href="mailto:me@aneeshajithkumar.in">me@aneeshajithkumar.in</a>
+          <a href="mailto:me@aneeshajithkumar.online">me@aneeshajithkumar.online</a>
         </div>
         <div>
           <a href="tel:+919746934344">

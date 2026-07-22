@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aneeshajithkumar.in/sitemap.xml
+Sitemap: https://aneeshajithkumar.online/sitemap.xml
