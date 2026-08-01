@@ -79,12 +79,6 @@ export function About() {
             ))}
           </div>
         </ScrollAnimation>
-
-        <ScrollAnimation animateIn="fadeInUp" delay={0.55 * 1000}>
-          <a href="/resume.html" target="_blank" rel="noreferrer" className="resume-link">
-            Download Resume
-          </a>
-        </ScrollAnimation>
       </div>
     </Container>
   );

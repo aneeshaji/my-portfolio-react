@@ -94,25 +94,6 @@ export const Container = styled.section`
     }
   }
 
-  .resume-link {
-    display: inline-block;
-    margin-top: 4.5rem;
-    padding: 1.4rem 3.4rem;
-    background: var(--primary);
-    color: var(--black);
-    font-size: 1.6rem;
-    font-weight: 700;
-    font-family: var(--font-accent);
-    border-radius: 999px;
-    transition: 0.3s;
-    box-shadow: 0 8px 30px -8px rgba(34, 211, 238, 0.5);
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 40px -8px rgba(34, 211, 238, 0.6);
-    }
-  }
-
   .skill-pills {
     display: flex;
     flex-wrap: wrap;

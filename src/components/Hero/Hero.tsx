@@ -45,9 +45,6 @@ export function Hero() {
             <NavHashLink smooth to="#expertise" className="button outline">
               View Expertise
             </NavHashLink>
-            <a href="/resume.html" target="_blank" rel="noreferrer" className="button resume">
-              Download Resume
-            </a>
           </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>

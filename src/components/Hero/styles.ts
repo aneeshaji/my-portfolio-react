@@ -109,18 +109,6 @@ export const Container = styled.section`
       }
     }
 
-    &.resume {
-      background: transparent;
-      color: var(--pop);
-      border: 1px solid var(--pop);
-      box-shadow: none;
-
-      &:hover {
-        background: rgba(255, 138, 101, 0.1);
-        color: var(--pop);
-        transform: translateY(-2px);
-      }
-    }
   }
 
   .stats {
