@@ -2,87 +2,88 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   margin-top: 25rem;
-  
-  h2 {
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 5rem;
-    background: linear-gradient(to right, var(--primary) 0%, var(--secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
 
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 3rem;
     padding: 1rem;
-    
-    /* Bento Grid Effect: Make every 4th item span 2 columns if width allows */
-    @media (min-width: 960px) {
-       & > div:nth-child(4n + 1) .project {
-         grid-column: span 2;
-       }
-       /* Or we can just stick to a clean uniform grid which is also very "bento" if cards are uniform */
+  }
+
+  .project {
+    position: relative;
+    padding: 3.5rem 3rem 3rem;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 2rem;
+    transition: 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: var(--text);
+    overflow: hidden;
+
+    &:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary);
+      box-shadow: 0 16px 50px -12px rgba(34, 211, 238, 0.45);
     }
 
-    .project {
-      padding: 3rem 2.5rem;
-      background: var(--glass);
-      backdrop-filter: blur(10px);
-      border: 1px solid var(--glass-border);
-      border-radius: 2rem;
-      transition: 0.4s ease;
+    &:hover h3 {
+      color: var(--primary);
+    }
+
+    .index {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      font-family: var(--font-heading);
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: var(--pop);
+      opacity: 0.9;
+      line-height: 1;
+      text-shadow: 0 0 20px rgba(255, 138, 101, 0.35);
+    }
+
+    header {
       display: flex;
-      flex-direction: column;
-      height: 100%;
-      color: var(--text);
-      position: relative;
-      overflow: hidden;
-      
-      /* Glow effect on hover */
-      &:hover {
-        transform: translateY(-8px);
-        border-color: var(--primary);
-        box-shadow: 0 10px 40px -10px rgba(0, 243, 255, 0.15);
-        background: var(--glass);
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
 
-        h3 {
-          color: var(--primary);
-        }
-      }
-
-      header {
+      .icon-chip {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        color: var(--mobile-primary); 
-        margin-bottom: 3rem;
-        
-        .project-links {
-          display: flex;
-          align-items: center;
-          gap: 1.5rem;
-        }
-        
-        a > img {
-          width: 2.8rem;
-          filter: brightness(0) invert(1);
-          transition: 0.3s;
-          opacity: 0.7;
-          
-          &:hover {
-            opacity: 1;
-            transform: scale(1.1);
-          }
-        }
-        
+        justify-content: center;
+        width: 5.2rem;
+        height: 5.2rem;
+        border-radius: 1.4rem;
+        background: rgba(34, 211, 238, 0.12);
+        border: 1px solid rgba(34, 211, 238, 0.35);
+
         svg {
           stroke: var(--primary);
-          width: 4rem;
+          width: 2.6rem;
+          height: 2.6rem;
         }
       }
-      
+
+      a > img {
+        width: 2.4rem;
+        filter: var(--ui-icon-filter);
+        opacity: 0.6;
+        transition: 0.3s;
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .body {
       h3 {
         margin-bottom: 1.5rem;
         font-size: 2.4rem;
@@ -91,56 +92,50 @@ export const Container = styled.section`
       }
 
       p {
-        letter-spacing: 0.05rem;
-        margin-bottom: 2rem;
         line-height: 1.6;
         color: var(--text-muted);
-        
-        a {
-          color: var(--white);
-          border-bottom: 1px solid var(--primary);
-          transition: color 0.25s;
-          &:hover {
-            color: var(--primary);
-          }
-        }
       }
+    }
 
-      footer {
-        margin-top: auto;
-        .tech-list {
-          display: flex;
-          align-items: center;
-          gap: 1.5rem;
-          flex-wrap: wrap;
-          font-size: 1.2rem;
+    footer {
+      margin-top: auto;
+      padding-top: 2rem;
+
+      .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+
+        li {
+          padding: 0.5rem 1.2rem;
+          font-size: 1.25rem;
+          font-family: var(--font-accent);
           color: var(--secondary);
-          opacity: 0.9;
-          font-weight: 500;
-          text-transform: uppercase;
-          letter-spacing: 1px;
+          background: rgba(34, 211, 238, 0.08);
+          border: 1px solid rgba(34, 211, 238, 0.25);
+          border-radius: 999px;
         }
       }
     }
   }
 
   @media (max-width: 960px) {
-    h2 {
-      font-size: 3.5rem;
-    }
-    
     .projects {
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      
+
       .project {
         padding: 2.5rem;
-        
+
+        .index {
+          font-size: 3rem;
+        }
+
         .body {
           h3 {
             font-size: 2rem;
           }
-          
+
           p {
             font-size: 1.4rem;
           }
@@ -150,32 +145,21 @@ export const Container = styled.section`
   }
 
   @media (max-width: 740px) {
-    h2 {
-      font-size: 3rem;
-    }
-    
     .projects {
       grid-template-columns: 1fr;
       gap: 2rem;
       padding: 0 1rem;
-      
+
       .project {
         padding: 2rem;
-        
+
         .body {
           h3 {
             font-size: 1.8rem;
           }
-          
+
           p {
             font-size: 1.3rem;
-          }
-        }
-        
-        footer {
-          .tech-list {
-            font-size: 1.1rem;
-            gap: 1rem;
           }
         }
       }

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aneesh Ajithkumar — Resume</title>
+  <meta name="robots" content="noindex" />
+  <style>
+    :root {
+      --ink: #0b1220;
+      --muted: #475569;
+      --line: #dbe3ee;
+      --accent: #0e7490;
+      --soft: #f4f7fb;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: #e9edf3;
+      line-height: 1.55;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .toolbar {
+      max-width: 820px;
+      margin: 2rem auto 0;
+      padding: 0 2.4rem;
+      text-align: right;
+    }
+    .toolbar button {
+      font: inherit;
+      font-weight: 600;
+      padding: 0.9rem 1.8rem;
+      border: none;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      cursor: pointer;
+      box-shadow: 0 6px 18px -6px rgba(14, 116, 144, 0.6);
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .toolbar button:hover { transform: translateY(-2px); box-shadow: 0 10px 22px -6px rgba(14, 116, 144, 0.7); }
+    .sheet {
+      max-width: 820px;
+      margin: 1.5rem auto 3rem;
+      background: #fff;
+      padding: 4.5rem 4.5rem 3.5rem;
+      border-radius: 10px;
+      box-shadow: 0 20px 60px -24px rgba(11, 18, 32, 0.4);
+    }
+    header.top { display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; flex-wrap: wrap; }
+    h1 { font-size: 3rem; letter-spacing: -0.01em; line-height: 1.1; }
+    .role-line { color: var(--accent); font-weight: 600; font-size: 1.15rem; margin-top: 0.3rem; }
+    .contact { text-align: right; font-size: 0.92rem; color: var(--muted); line-height: 1.7; }
+    .contact a { color: var(--accent); text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    .section { margin-top: 2.6rem; }
+    h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--line);
+      margin-bottom: 1.4rem;
+    }
+    .job { margin-bottom: 1.8rem; }
+    .job:last-child { margin-bottom: 0; }
+    .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+    .job-head h3 { font-size: 1.12rem; }
+    .job-head .date { font-size: 0.85rem; color: var(--muted); white-space: nowrap; }
+    .role { font-weight: 600; color: var(--accent); margin: 0.2rem 0 0.5rem; }
+    ul { margin: 0; padding-left: 1.4rem; }
+    li { margin-bottom: 0.45rem; }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .skill {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.35rem 1rem;
+      font-size: 0.88rem;
+    }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2.6rem; }
+    .call { margin-top: 1.6rem; font-size: 0.95rem; }
+    .call strong { color: var(--accent); }
+    @media (max-width: 640px) {
+      .sheet { padding: 2.4rem 1.8rem; }
+      .grid-2 { grid-template-columns: 1fr; gap: 1.6rem; }
+      header.top { flex-direction: column; }
+      .contact { text-align: left; }
+    }
+    @media print {
+      body { background: #fff; }
+      .toolbar { display: none; }
+      .sheet { box-shadow: none; margin: 0; max-width: none; border-radius: 0; padding: 0.5in 0.4in; }
+      a { color: var(--ink); }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="window.print()">Download PDF</button>
+  </div>
+
+  <main class="sheet">
+    <header class="top">
+      <div>
+        <h1>Aneesh Ajithkumar</h1>
+        <p class="role-line">Senior Project Lead · Full Stack Developer</p>
+      </div>
+      <div class="contact">
+        <div>Trivandrum, Kerala, India</div>
+        <div><a href="mailto:me@aneeshajithkumar.online">me@aneeshajithkumar.online</a></div>
+        <div><a href="tel:+919746934344">+91 97469 34344</a></div>
+        <div><a href="https://aneeshajithkumar.online">aneeshajithkumar.online</a></div>
+        <div>LinkedIn · GitHub · QRZ (VU3CVW)</div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2>Summary</h2>
+      <p>
+        Senior Project Lead with 10+ years of experience designing, building, and shipping responsive,
+        high-performance web applications. Full stack across React, Angular, JavaScript, TypeScript, PHP,
+        and MySQL — with hands-on cloud infrastructure and deployment. Licensed ham radio operator
+        (callsign <strong>VU3CVW</strong>) with a long-standing interest in wireless communication.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>RM India, Trivandrum</h3>
+          <span class="date">July 2021 — Present</span>
+        </div>
+        <p class="role">Senior Project Lead</p>
+        <ul>
+          <li>Lead project teams and own delivery end-to-end across React, Angular, JavaScript, and PHP (Yii).</li>
+          <li>Architect scalable frontends and backends, and manage cloud hosting, deployments, and databases.</li>
+          <li>Mentor developers, drive code reviews, and maintain quality, maintainability, and performance.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Yarab Technologies Pvt. Ltd, Trivandrum</h3>
+          <span class="date">May 2020 — June 2021</span>
+        </div>
+        <p class="role">Senior Software Engineer</p>
+        <ul>
+          <li>Built and maintained web applications using JavaScript, jQuery, PHP, Laravel, and WordPress.</li>
+          <li>Delivered client-facing features and custom WordPress builds for diverse business requirements.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head">
+          <h3>Optiologic Technologies Pvt. Ltd, Trivandrum</h3>
+          <span class="date">January 2016 — April 2020</span>
+        </div>
+        <p class="role">Junior Software Engineer</p>
+        <ul>
+          <li>Developed responsive web applications with JavaScript, jQuery, PHP, Laravel, and WordPress.</li>
+          <li>Collaborated in cross-functional teams through design, development, and production releases.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="grid-2">
+      <section class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span class="skill">React</span>
+          <span class="skill">Angular</span>
+          <span class="skill">TypeScript</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">PHP</span>
+          <span class="skill">WordPress</span>
+          <span class="skill">Bootstrap</span>
+          <span class="skill">MySQL</span>
+          <span class="skill">HTML / CSS</span>
+          <span class="skill">Cloud Deployment</span>
+          <span class="skill">Git</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Highlighted Projects</h2>
+        <ul>
+          <li><strong>ATSense</strong> — AI resume optimizer and free ATS checker (atsense.online).</li>
+          <li><strong>FramezLabs</strong> — custom photo frames &amp; gift store (framezlabs.store).</li>
+          <li><strong>FramezLabs ERP</strong> — business management platform for orders and inventory.</li>
+          <li><strong>TechnoByte Innovations</strong> — software company site and services (technobyteinnovations.in).</li>
+        </ul>
+      </section>
+    </div>
+
+    <p class="call">
+      <strong>Ham radio:</strong> Licensed Amateur Radio Operator, callsign <strong>VU3CVW</strong> (QRZ profile).
+    </p>
+  </main>
+</body>
+</html>

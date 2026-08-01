@@ -16,8 +16,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet">
+  </noscript>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  </noscript>
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
   <link rel="canonical" href="https://aneeshajithkumar.online/" />
 
@@ -26,13 +34,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- Mobile and PWA Meta Tags -->
-  <meta name="theme-color" content="#00f3ff" />
+  <meta name="theme-color" content="#070710" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Aneesh Ajithkumar" />
   <meta name="format-detection" content="telephone=no" />
-  <meta name="msapplication-TileColor" content="#00f3ff" />
+  <meta name="msapplication-TileColor" content="#070710" />
   <meta name="msapplication-tap-highlight" content="no" />
 
   <!-- Primary Meta Tags -->
@@ -46,7 +54,7 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://aneeshajithkumar./">
+  <meta property="og:url" content="https://aneeshajithkumar.online/">
   <meta property="og:title" content="Aneesh Ajithkumar | Senior Project Lead & Full Stack Developer">
   <meta property="og:description"
     content="Senior Project Lead at RM India. Specializing in React, Angular, JavaScript, PHP, and cloud architecture. Licensed Ham Radio Operator (VU3CVW).">
@@ -58,7 +66,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://aneeshajithkumar./">
+  <meta name="twitter:url" content="https://aneeshajithkumar.online/">
   <meta name="twitter:title" content="Aneesh Ajithkumar | Senior Project Lead">
   <meta name="twitter:description"
     content="Senior Project Lead at RM India. Specializing in React, Angular, JavaScript, PHP, and cloud architecture.">
@@ -93,6 +101,57 @@
     ],
     "knowsAbout": ["React", "Angular", "JavaScript", "PHP", "Full Stack Development", "Cloud Architecture", "Web Development"],
     "alumniOf": "Software Engineering"
+  }
+  </script>
+
+  <!-- JSON-LD Structured Data: Featured Projects -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Featured Projects by Aneesh Ajithkumar",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "WebSite",
+          "name": "ATSense",
+          "description": "AI-powered resume optimization platform that helps job seekers beat applicant tracking systems.",
+          "url": "https://atsense.online/"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "WebSite",
+          "name": "FramezLabs",
+          "description": "Online store for custom photo frames and personalized gifts, delivering across India.",
+          "url": "https://framezlabs.store/"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "WebSite",
+          "name": "TechnoByte Innovations",
+          "description": "Software development company delivering web development, mobile apps, cloud solutions, and AI/ML services.",
+          "url": "https://technobyteinnovations.in/"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "WebSite",
+          "name": "FramezLabs ERP",
+          "description": "Enterprise resource planning system powering FramezLabs' orders, inventory, and business operations.",
+          "url": "https://erp.framezlabs.store/"
+        }
+      }
+    ]
   }
   </script>
 </head>

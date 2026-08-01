@@ -2,42 +2,42 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   :root {
-    --background: #050505;
-    --background-light: #0a0a0a;
-    --primary: #00f3ff;
-    --secondary: #00f3ff; /* Changed from Purple to match Primary (Cyan) */
-    --text: #e0e0e0;
-    --text-muted: #a0a0a0;
+    --background: #0a1220;
+    --background-light: #0e1828;
+    --primary: #67e8f9; /* Bright Cyan */
+    --secondary: #22d3ee; /* Cyan */
+    --pop: #ff8a65; /* Coral - warm pop accent */
+    --text: #e7f6fb;
+    --text-muted: #8ea3b8;
     --white: #ffffff;
     --black: #000000;
-    
+
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
     --font-accent: 'Outfit', sans-serif;
 
-    --glass: rgba(255, 255, 255, 0.05);
-    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass: rgba(255, 255, 255, 0.04);
+    --glass-border: rgba(255, 255, 255, 0.09);
     --glass-blur: 10px;
-    
+
     --ui-icon-filter: brightness(0) invert(1); /* Force white icons for dark mode */
   }
 
   html.light {
-    --background: #f0f0f5;
+    --background: #f0f8fc;
     --background-light: #ffffff;
-    --text: #1a1a1a;
-    --text-muted: #4a4a4a;
-    --white: #000000; 
+    --primary: #0891b2; /* Dark Cyan for light-mode readability */
+    --secondary: #0e7490;
+    --pop: #ea580c; /* Coral - warm pop accent */
+    --text: #10222b;
+    --text-muted: #4a5b66;
+    --white: #000000;
     --black: #ffffff;
-    
+
     /* Adjust glass for light mode */
-    --glass: rgba(0, 0, 0, 0.05);
-    --glass-border: rgba(0, 0, 0, 0.1);
-    
-    /* Darker colors for light mode readability */
-    --primary: #0e7490; /* Darker Cyan/Teal */
-    --secondary: #0e7490; /* Changed from Purple to match Primary */
-    
+    --glass: rgba(0, 0, 0, 0.04);
+    --glass-border: rgba(0, 0, 0, 0.08);
+
     --ui-icon-filter: none; /* Keep icons natural (black) in light mode */
   }
 
@@ -55,17 +55,59 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: var(--background);
+    background-image:
+      radial-gradient(ellipse 60% 45% at 12% 0%, rgba(34, 211, 238, 0.08), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 88% 100%, rgba(255, 138, 101, 0.06), transparent 60%);
+    background-attachment: fixed;
     color: var(--text);
     font-family: var(--font-body);
     font-size: 1.6rem;
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+  }
+
+  html.light body {
+    background-image:
+      radial-gradient(ellipse 60% 45% at 12% 0%, rgba(34, 211, 238, 0.06), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 88% 100%, rgba(234, 88, 12, 0.05), transparent 60%);
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--white);
     font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  /* Shared modern section header pattern */
+  .section-head {
+    text-align: center;
+    margin-bottom: 6rem;
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--pop);
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      font-family: var(--font-accent);
+      font-weight: 700;
+      font-size: 1.3rem;
+
+      &::before {
+        content: '';
+        width: 2.5rem;
+        height: 2px;
+        background: var(--pop);
+      }
+    }
+
+    h2 {
+      font-size: 5rem;
+      color: var(--primary);
+      margin-top: 1rem;
+    }
   }
 
   a {

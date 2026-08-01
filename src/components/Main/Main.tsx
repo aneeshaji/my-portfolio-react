@@ -4,6 +4,7 @@ import { Hero } from "../Hero/Hero";
 import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
 import { Project } from "../Project/Project";
+import { Projects } from "../Projects/Projects";
 import { Experience } from "../Experience/Experience";
 import wordpress from "../../assets/wordpress.svg";
 import mysqlIcon from "../../assets/mysql-icon.svg";
@@ -29,12 +30,12 @@ export function Main() {
             "enable": true,
             "zIndex": 1
           },
-          "detectRetina": true,
-          "fpsLimit": 60,
+          "detectRetina": false,
+          "fpsLimit": 45,
           "interactivity": {
             "events": {
               "onClick": {
-                "enable": true,
+                "enable": false,
                 "mode": "push"
               },
               "onDiv": {
@@ -117,10 +118,10 @@ export function Main() {
             "number": {
               "density": {
                 "enable": true,
-                "area": 800
+                "area": 1200
               },
-              "limit": 20,
-              "value": 15,
+              "limit": 12,
+              "value": 10,
             },
             "opacity": {
               "animation": {
@@ -261,6 +262,7 @@ export function Main() {
       <Hero></Hero>
       <About></About>
       <Project></Project>
+      <Projects></Projects>
       <Experience></Experience>
       <Contact></Contact>
     </Container>

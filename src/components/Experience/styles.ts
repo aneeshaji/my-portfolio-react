@@ -2,145 +2,141 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   margin-top: 25rem;
-  margin-bottom: 0;
 
-  h2 {
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 5rem;
-    color: var(--primary);
-  }
-
-  .experience-body {
+  .experience-list {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    max-width: 900px;
+    gap: 2.5rem;
+    max-width: 860px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
-  .experience-item {
-    background: var(--glass);
-    border: 1px solid var(--glass-border);
-    padding: 3rem;
-    border-radius: 2rem;
-    transition: 0.3s;
+  .exp-row {
     position: relative;
-    overflow: hidden;
+    padding: 2.8rem 3rem;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 1.8rem;
+    transition: 0.3s ease;
 
     &:hover {
+      transform: translateY(-4px);
       border-color: var(--primary);
-      transform: translateY(-5px);
-      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 14px 44px -14px rgba(34, 211, 238, 0.45);
     }
 
-    header {
+    &.current {
+      border-color: rgba(255, 138, 101, 0.45);
+      background: linear-gradient(160deg, rgba(255, 138, 101, 0.06), rgba(34, 211, 238, 0.03));
+    }
+
+    .row-head {
       display: flex;
-      justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 1rem;
+      justify-content: space-between;
+      gap: 2rem;
       flex-wrap: wrap;
-      gap: 1rem;
 
-      h3 {
-        color: var(--primary);
-        font-size: 2.2rem;
-        flex: 1;
-        min-width: 250px;
+      .title {
+        min-width: 240px;
+
+        h3 {
+          font-size: 2.4rem;
+          color: var(--primary);
+          font-family: var(--font-heading);
+          margin-bottom: 0.3rem;
+          letter-spacing: -0.01em;
+        }
+
+        .company {
+          font-size: 1.5rem;
+          font-family: var(--font-accent);
+          font-weight: 600;
+          color: var(--white);
+
+          .sep {
+            color: var(--text-muted);
+            margin: 0 0.4rem;
+          }
+        }
       }
 
-      .date {
-        color: var(--text);
-        font-weight: 700;
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-        background: var(--glass-border);
-        padding: 0.5rem 1rem;
-        border-radius: 0.5rem;
+      .meta {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        .date {
+          color: var(--text);
+          font-weight: 600;
+          font-size: 1.25rem;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          background: rgba(34, 211, 238, 0.1);
+          border: 1px solid rgba(34, 211, 238, 0.3);
+          padding: 0.4rem 1.1rem;
+          border-radius: 999px;
+          white-space: nowrap;
+        }
+
+        .badge {
+          font-family: var(--font-accent);
+          font-size: 1.15rem;
+          font-weight: 700;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: var(--pop);
+          background: rgba(255, 138, 101, 0.12);
+          border: 1px solid rgba(255, 138, 101, 0.4);
+          padding: 0.4rem 1.1rem;
+          border-radius: 999px;
+        }
       }
     }
 
-    .role {
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: var(--white);
-      margin-bottom: 1rem;
-    }
-
-    p {
+    .summary {
+      margin-top: 1.6rem;
       color: var(--text-muted);
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       line-height: 1.6;
     }
   }
 
   @media (max-width: 768px) {
     margin-top: 10rem;
-    
-    h2 {
-      font-size: 3.5rem;
-      margin-bottom: 4rem;
-    }
-    
-    .experience-body {
-      padding: 0 1rem;
-    }
-    
-    .experience-item {
-      padding: 2rem;
-      
-      header {
+
+    .exp-row {
+      padding: 2.2rem;
+
+      .row-head {
         flex-direction: column;
-        align-items: flex-start;
-        
-        h3 {
-          font-size: 2rem;
+        gap: 1.2rem;
+
+        .meta {
+          order: -1;
         }
-        
-        .date {
-          font-size: 1.2rem;
-        }
-      }
-      
-      .role {
-        font-size: 1.6rem;
-      }
-      
-      p {
-        font-size: 1.4rem;
       }
     }
   }
-  
+
   @media (max-width: 600px) {
     margin-top: 8rem;
-    
-    h2 {
-      font-size: 3rem;
-      margin-bottom: 3rem;
-    }
-    
-    .experience-item {
-      padding: 1.5rem;
-      
-      header {
-        h3 {
-          font-size: 1.8rem;
-        }
-        
-        .date {
-          font-size: 1.1rem;
-          padding: 0.4rem 0.8rem;
-        }
+
+    .exp-row {
+      padding: 1.8rem;
+
+      .title h3 {
+        font-size: 2rem;
       }
-      
-      .role {
-        font-size: 1.5rem;
+
+      .company {
+        font-size: 1.4rem;
       }
-      
-      p {
+
+      .summary {
         font-size: 1.3rem;
       }
     }

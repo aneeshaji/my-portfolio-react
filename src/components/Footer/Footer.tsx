@@ -1,57 +1,56 @@
 import { Container } from "./styles";
-import reactIcon from "../../assets/react-icon.svg";
-import hamRadioIcon from "../../assets/ham-radio.svg";
 import linkedin from "../../assets/linkedin.svg";
 import githubIcon from "../../assets/github.svg";
 import whatsapp from "../../assets/whatsapp.svg";
 import telegram from "../../assets/telegram.svg";
-import instagramIcon from "../../assets/instagram.svg";
-// import discordIcon from '../../assets/discord.png'
 
 export function Footer() {
 	return (
-		<Container className="footer">
-			<a href="https://aneeshajithkumar.online" className="logo">
-				<span>aneesh</span>
-				<span>ajithkumar.online</span>
+		<Container>
+			<a href="#home" className="wordmark">
+				<span>{"<Aneesh "}</span>
+				<span>{" Ajithkumar/>"}</span>
 			</a>
-			<div className="ham-radio">
-				<img src={hamRadioIcon} alt="Ham Radio" className="ham-icon" />
-				<a href="https://www.qrz.com/db/VU3CVW" target="_blank" rel="noreferrer">
-					VU3CVW
-				</a>
-			</div>
+			<a
+				href="https://www.qrz.com/db/VU3CVW"
+				target="_blank"
+				rel="noreferrer"
+				className="call"
+			>
+				VU3CVW
+			</a>
 			<div className="social-media">
 				<a
 					href="https://www.linkedin.com/in/aneesh-ajithkumar/"
 					target="_blank"
 					rel="noreferrer"
+					aria-label="LinkedIn"
 				>
-					<img src={linkedin} alt="Linkedin" />
+					<img src={linkedin} alt="LinkedIn" />
 				</a>
-				<a href="https://github.com/aneeshaji" target="_blank" rel="noreferrer">
+				<a
+					href="https://github.com/aneeshaji"
+					target="_blank"
+					rel="noreferrer"
+					aria-label="GitHub"
+				>
 					<img src={githubIcon} alt="GitHub" />
 				</a>
 				<a
 					href="https://api.whatsapp.com/send/?phone=%2B919746934344&text=Hello+Aneesh"
 					target="_blank"
 					rel="noreferrer"
+					aria-label="WhatsApp"
 				>
-					<img src={whatsapp} alt="Whatsapp" />
+					<img src={whatsapp} alt="WhatsApp" />
 				</a>
 				<a
 					href="https://t.me/aneeshajithkumar"
 					target="_blank"
 					rel="noreferrer"
+					aria-label="Telegram"
 				>
-					<img src={telegram} alt="telegram" />
-				</a>
-				<a
-					href="https://www.instagram.com/aneesh_ajithkumar/"
-					target="_blank"
-					rel="noreferrer"
-				>
-					<img src={instagramIcon} alt="Instagram" />
+					<img src={telegram} alt="Telegram" />
 				</a>
 			</div>
 		</Container>

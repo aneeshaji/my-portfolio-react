@@ -8,11 +8,23 @@ export const Container = styled.header`
   
   /* Full-Width Fixed Glass Header */
   background: var(--glass);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--glass-border);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+
+  /* Bottom accent line */
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 2px;
+    background: var(--primary);
+    opacity: 0.6;
+  }
+
   position: fixed;
   top: 0;
   left: 0;
@@ -32,7 +44,7 @@ export const Container = styled.header`
       text-transform: uppercase;
       font-size: 1.4rem;
       transition: all 0.3s ease;
-      border-radius: 0.5rem;
+      border-radius: 999px;
 
       &:hover {
         color: var(--primary);
@@ -40,8 +52,33 @@ export const Container = styled.header`
       }
 
       &.active {
-        color: var(--primary);
+        color: var(--black);
+        background: var(--primary);
       }
+    }
+
+  }
+
+  .logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+
+    &::before {
+      content: '';
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 50%;
+      background: var(--pop);
+      box-shadow: 0 0 12px var(--pop);
+    }
+
+    span:first-child {
+      color: var(--primary);
     }
   }
 
@@ -98,6 +135,27 @@ export const Container = styled.header`
     outline: none;
   }
 
+  .theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: 1.5rem;
+    z-index: 1000;
+  }
+
+  .theme-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+    color: var(--text);
+    filter: saturate(0.9);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
   label {
     cursor: pointer;
     text-indent: -9999px;
@@ -109,8 +167,6 @@ export const Container = styled.header`
     align-items: center;
     border-radius: 100px;
     position: relative;
-    margin-left: auto;
-    right: 10px;
   }
 
   label:after {

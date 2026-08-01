@@ -5,6 +5,8 @@ export const Container = styled.main`
   position: relative;
   z-index: 0;
   padding: 0 10rem;
+  max-width: 1440px;
+  margin: 0 auto;
   overflow-x: hidden;
   #tsparticles{
     position: absolute;
