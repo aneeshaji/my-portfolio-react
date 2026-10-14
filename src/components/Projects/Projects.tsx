@@ -43,6 +43,14 @@ const projects = [
 		url: "http://balancely-crm.technobyteinnovations.in/",
 		image: "/Images/balancely-crm.png",
 	},
+	{
+		name: "Thurayilkunnu Temple",
+		description:
+			"Official website for Thurayilkunnu Sree Subrahmanya Swami Temple, Karunagappally — featuring daily panchangam, online vazhipadu booking, pooja schedules, and annual festival listings.",
+		tech: ["WordPress", "PHP", "Temple Portal"],
+		url: "https://thurayilkunnutemple.com/",
+		image: "/Images/thurayilkunnu-temple.png",
+	},
 ];
 
 function ProjectPreview({ image, name }: { image: string | undefined; name: string }) {
