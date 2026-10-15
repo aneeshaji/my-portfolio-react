@@ -114,7 +114,8 @@ export const Container = styled.footer`
     gap: 2rem;
 
     .wordmark,
-    .call {
+    .call,
+    .social-media {
       justify-self: center;
     }
   }
